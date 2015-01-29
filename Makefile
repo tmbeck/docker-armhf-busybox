@@ -1,9 +1,8 @@
-
 build: rootfs.tar Dockerfile
-	docker build -t busybox .
+	docker build -t armhf-busybox .
 
 tag:
-	docker tag busybox progrium/busybox
+	docker tag armhf-busybox moul/armhf-busybox
 
 rootfs.tar:
 	cd rootfs && docker build -t busybox-rootfs .

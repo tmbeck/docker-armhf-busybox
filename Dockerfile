@@ -1,5 +1,5 @@
 FROM       scratch
-MAINTAINER Jeff Lindsay <progrium@gmail.com>
+MAINTAINER Manfred Touron <m@42.am> (@moul)
 
 ADD ./rootfs.tar /
 ADD ./opkg.conf         /etc/opkg.conf
