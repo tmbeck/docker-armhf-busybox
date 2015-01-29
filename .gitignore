@@ -1,0 +1,4 @@
+initrd.gz
+initrd.tar
+initrd/
+vmlinuz
