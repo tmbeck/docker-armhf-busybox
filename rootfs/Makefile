@@ -1,7 +1,4 @@
 .PHONY: config
 
 config:
-	docker run -it progrium/rootbuilder make nconfig
-	docker cp `docker ps -lq`:/tmp/buildroot/.config .
-	docker rm `docker ps -lq`
-	mv .config config
+	docker run -v $(PWD)/config:/tmp/buildroot/.config -it --rm progrium/rootbuilder make nconfig
