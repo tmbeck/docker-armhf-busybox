@@ -2,3 +2,4 @@ initrd.gz
 initrd.tar
 initrd/
 vmlinuz
+rootfs.tar
